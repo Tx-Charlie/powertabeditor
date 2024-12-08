@@ -3,6 +3,7 @@ find_package( Qt6 REQUIRED COMPONENTS
 	Network
 	PrintSupport
 	LinguistTools
+	OpenGLWidgets
 )
 
 set( QT_PLUGINS )

@@ -31,6 +31,7 @@
 #include <QGraphicsSceneDragDropEvent>
 #include <QPrinter>
 #include <QScrollBar>
+#include <QtOpenGLWidgets/QOpenGLWidget>
 #include <score/score.h>
 
 void ScoreArea::Scene::dragEnterEvent(QGraphicsSceneDragDropEvent *event)
@@ -47,6 +48,7 @@ ScoreArea::ScoreArea(SettingsManager &settings_manager, QWidget *parent)
       myActivePalette(nullptr),
       myDisableRedraw(false)
 {
+    setViewport(new QOpenGLWidget);
     setScene(&myScene);
 
     // Configure the palette for the light theme and printing.

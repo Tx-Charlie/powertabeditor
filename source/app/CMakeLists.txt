@@ -57,4 +57,5 @@ pte_library(
         pteutil
         Qt::Widgets
         Qt::PrintSupport
+        Qt::OpenGLWidgets
 )
